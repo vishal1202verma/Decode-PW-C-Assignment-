@@ -21,5 +21,5 @@ max = max2 = max3  = arr[0];
     }
  }
   cout<<" Three greatest number of array are :"<<max<<" "<< max2 <<" "<<max3;
-
+    
 }

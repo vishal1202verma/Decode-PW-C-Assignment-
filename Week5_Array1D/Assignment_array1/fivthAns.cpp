@@ -13,12 +13,12 @@ int main(){
  v.push_back(9);
  v.push_back(8);
 //  Taking input 
- for(int i=0; i<v.size(); i++){
-    int x;
-    cin>>x;
-    v.push_back(x); 
+//  for(int i=0; i<v.size(); i++){
+//     int x;
+//     cin>>x;
+//     v.push_back(x); 
 
- } 
+//  } 
  sort(v.begin(), v.end());
   for(int i=0; i<v.size(); i++){
     cout<<v[i]<<" ";
