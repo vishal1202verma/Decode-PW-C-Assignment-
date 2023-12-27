@@ -10,14 +10,14 @@ using namespace std;
 int main(){
 string s = "pwians";
 int n  = s.length();
-for(int i=0; i <n; i++){
+int c =0;
+for(int i=0; i <(int)n; i++){
     // vowel = a, ,e, i, o , u
-    char ch1 = 'a';
-    char ch2 = 'e';
-    char ch3 = 'i';
-    char ch4 = 'o';
-    char ch5 = 'u';
+   if(s[i] == 'a' || s[i] == 'e' || s[i]== 'i' || s[i] == 'o' || s[i] == 'u' ){
+               c++;
+   }
+   
 }
-
+cout<<"the number of consonants in the given array are :"<<n-c;
 
 }
