@@ -10,6 +10,6 @@ cout<<"enter the integer b :";
 cin>>b;
 int sum = a+b;
 cout<<"the sum of the integer is :"<<sum;
-
+cout<<"vishal verma ji a pro coder";
 
 }
