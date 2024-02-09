@@ -9,8 +9,9 @@
 #include<string>
 using namespace std;
 int main (){
+cout<<"After on iteration of bubble Sort the following array will be --> 1,2,5,4,3,6";
+  
 
-cout<<"vishal verma ji ";
 
 
 }
