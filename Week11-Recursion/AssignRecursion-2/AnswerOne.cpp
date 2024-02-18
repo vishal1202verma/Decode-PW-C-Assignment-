@@ -3,9 +3,9 @@
 using namespace std;
 void PrintDisplay(int arr[], int n, int idx){
   // base case 
-  if(n == idx) return;
+  if(n == idx) return ;
   cout<<arr[idx]<<" ";
-  PrintDisplay(arr, n,idx-1 );
+  PrintDisplay(arr, n, idx-1 );
   
 }
 
@@ -13,6 +13,7 @@ void PrintDisplay(int arr[], int n, int idx){
 int main (){
 int arr [] = {1,2,3,4,5,6};
 int n  = sizeof(arr)/sizeof(arr[0]);
-PrintDisplay(arr, 0, n);
+PrintDisplay(arr, 0, n-1);
 return 0;
+
 }
