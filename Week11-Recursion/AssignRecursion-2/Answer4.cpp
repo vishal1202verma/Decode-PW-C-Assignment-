@@ -17,7 +17,7 @@ void sumTriangle(vector<int> &arr, int n) {
  cout << arr[i] << " ";
  if(i != 0) {
  temp[i-1] = arr[i-1] + arr[i];
- }
+ } 
  }
  cout << endl;
  sumTriangle(temp, n-1);
