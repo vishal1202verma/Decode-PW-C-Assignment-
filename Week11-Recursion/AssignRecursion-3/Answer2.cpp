@@ -2,27 +2,30 @@
 #include<iostream>
 #include<vector>
 using namespace std;
-void subSquence( int arr[] , vector<int>ans, int n, int idx){
+void subSquence( int arr[] , vector<int>ans, int n, int idx, int k){
  if(n==idx){
-    for(int i=0; i<ans.size(); i++){
+    if(ans.size()==k){
+        for(int i=0; i<ans.size(); i++){
         cout<<ans[i]<<" ";
     }
     cout<<endl;
+    }
     return;
 
  }
  
 
- subSquence(arr, ans, n, idx+1);
+ subSquence(arr, ans, n, idx+1, k);
  ans.push_back(arr[idx]);
- subSquence(arr, ans, n, idx+1);
+ subSquence(arr, ans, n, idx+1, k);
 
 }
 
 int main (){
-int arr[] ={1,2,3,};
+int arr[] ={1,2,3,4,5,6};
 int n = sizeof(arr)/sizeof(arr[0]);
 vector<int>ans;
-subSquence(arr, ans, n, 0);
+int k = 3;
+subSquence(arr, ans, n, 0, k);
 
 }
